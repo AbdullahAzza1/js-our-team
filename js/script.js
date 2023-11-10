@@ -35,7 +35,7 @@ for (let i = 0; i < persone.length; i++) {
         
     for(let chiave in persone[i]) {
         console.log( chiave, persone[i][chiave] );
-        document.getElementById("prs").innerHTML = persone[i];
+        document.getElementById("prs").innerHTML = persone;
     }
 
 }
