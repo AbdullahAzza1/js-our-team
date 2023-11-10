@@ -25,17 +25,19 @@ const persone = [
         foto: "scott-estrada-developer.jpg"
     },
     {
-        nomeCognome:"Barbara Ramos",
-        ruolo:"Graphic Designer",
-        foto:"barbara-ramos-graphic-designer.jpg"
+        nomeCognome: "Barbara Ramos",
+        ruolo: "Graphic Designer",
+        foto: "barbara-ramos-graphic-designer.jpg"
     }
 
 ]
 for (let i = 0; i < persone.length; i++) {
-        
-    for(let chiave in persone[i]) {
-        console.log( chiave, persone[i][chiave] );
-        document.getElementById("prs").innerHTML = persone;
-    }
+    console.log(persone[i].nomeCognome);
+    console.log(persone[i].ruolo);
+    console.log(persone[i].foto);
+
+    const div = document.createElement("div")
+    document.getElementById("person").appendChild(div)
+    document.getElementById("person").innerHTML += persone[i].nomeCognome;
 
 }
